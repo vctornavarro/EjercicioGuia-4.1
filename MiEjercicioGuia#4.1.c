@@ -7,13 +7,13 @@ int main(int argc, char argv[]) {
     char peticion[100];
     char respuesta[100];
 
-    strcpy (peticion, "Jofre/33/Oriol/25/Victor/19/Jose/79");
-    //resultado: Jofre*33-Oriol*25-Victor*19-Jose*79
+    strcpy (peticion, "Jofre/33/Oriol/25/Victor/12/Jose/79");
+    //resultado: Jofre*33-Oriol*25-Victor*12-Jose*79
 
     char nombre[10];
     int edad;
 
-    charp = strtok (peticion, "/");
+    char *p = strtok (peticion, "/");
     strcpy (nombre,p);
     p = strtok (NULL, "/");
     edad = atoi (p);
